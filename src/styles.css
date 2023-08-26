@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+body,
+html {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  font-family: Poppins;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------- HERO SECTION -------------------- */
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  padding-top: 10px;
+}
+
+nav > h3 {
+  font-size: 15px;
+  font-weight: normal;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.Hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://assets.codepen.io/6060109/agency-hero-image.png");
+  background-size: cover;
+  height: 600px;
+  color: white;
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+/* -------------------- SERVICES SECTION -------------------- */
+
+.Services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 600px;
+  padding-bottom: 35px;
+}
+
+.offering-title {
+  padding-top: 45px;
+  color: #133588;
+}
+
+.offerings {
+  display: flex;
+  padding: 10px 0 40px 0;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.offering-section {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+
+.offering-section > img {
+  width: 85%;
+  margin: auto;
+}
+
+.category {
+  width: 85%;
+  margin: 15px auto;
+  color: #806c6c;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* -------------------- FOOTER SECTION -------------------- */
+
+.Footer {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 600px;
+  background-color: #133588;
+  color: white;
+}
+
+.message {
+  margin: 0;
+  width: 50%;
+  text-align: center;
+}
+
+.email-input {
+  width: 200%;
+  transform: translateX(-25%);
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+  padding: 40px 0 5px 0;
+  margin-bottom: 30px;
+}
+
+.email-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 16px;
+}
+
+.email-input:focus {
+  color: white;
+  text-align: center;
+}
+
+.email-input:focus::placeholder {
+  color: transparent;
+}
+
+button {
+  padding: 8px 20px;
+  margin-bottom: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #806c6c;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #dee2e3;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 650px) {
+  .Hero,
+  .Services,
+  .Footer {
+    min-width: 375px;
+  }
+
+  .Services {
+    max-height: 1500px;
+  }
+
+  .offerings {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .offering-section {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+  }
+
+  .offering-section > img,
+  .category {
+    width: 70%;
+  }
+}
