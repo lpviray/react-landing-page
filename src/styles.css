@@ -115,6 +115,8 @@ nav > h3 {
   border-bottom: 1px solid white;
   padding: 40px 0 5px 0;
   margin-bottom: 30px;
+  color: white;
+  text-align: center;
 }
 
 .email-input::placeholder {
